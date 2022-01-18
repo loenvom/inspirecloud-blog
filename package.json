@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "server": "ts-node index.ts"
+    "server": "ts-node index.ts",
+    "tsc:init": "tsc --init",
+    "tsc": "tsc",
+    "build:run": "tsc && inspirecloud dev"
   },
   "keywords": [],
   "author": "",
