@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "server": "ts-node index.ts",
-    "tsc:init": "tsc --init",
-    "tsc": "tsc",
-    "build:run": "tsc && inspirecloud dev"
+    "web": "vite",
+    "web:build": "tsc -p ./web && vite build",
+    "server:build": "tsc -p ./server",
+    "server:run": "inspirecloud dev"
   },
   "keywords": [],
   "author": "",
@@ -18,14 +18,17 @@
     "@types/koa-static": "^4.0.2",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "@vitejs/plugin-react": "^1.1.4",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "vite": "^2.7.12"
   },
   "dependencies": {
     "koa": "^2.13.4",
     "koa-body": "^4.2.0",
     "koa-static": "^5.0.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-router": "^6.2.1"
   }
 }
